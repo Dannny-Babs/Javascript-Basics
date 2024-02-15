@@ -37,13 +37,13 @@
     <div class="userChoice">
         <h3>Choose your weapon</h3>
         <div class="choices">
-                    <button type="button" title="rock" value="rock" onclick="userChoice(rock)" id="userChoice">
+                    <button type="button" title="rock" value="rock" onclick="userChoice()" id="userChoice">
                         <img src="assets/Rock.png" alt="rock">
                     </button>
-                    <button type="button" title="paper" value="paper" onclick="userChoice(paper)" id="userChoice">
+                    <button type="button" title="paper" value="paper" onclick="userChoice()" id="userChoice">
                         <img src="assets/PapEr.png" alt="paper">
                     </button>
-                    <button type="button" title="scissors" value="scissors" onclick="userChoice(scissors)" 
+                    <button type="button" title="scissors" value="scissors" onclick="userChoice()" 
                       id="userChoice">
                         <img src="assets/Scissors.png" alt="scissors">
                     </button>
@@ -89,7 +89,7 @@ var btn = document.getElementById("userChoice");
 
  
 
-function userChoice( )
+function userChoice()
 {
     
     let userChoice = event.target.value;
@@ -128,7 +128,7 @@ function userChoice( )
         document.getElementById('result-modal-content').style.border = "2px solid red";
         computerScore++;
     }
-    document.getElementById('score').innerHTML = userScore + " - " + computerScore;
+    document.getElementById('score').innerHTML = userScore  ;
 } 
 </script>
 </body>
